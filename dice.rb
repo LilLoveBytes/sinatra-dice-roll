@@ -10,17 +10,8 @@ BetterErrors::Middleware.allow_ip!('0.0.0.0/0.0.0.0')
 
 
 get("/") do 
-  " 
-  <h1>Dice Roll</h1>
-  <h3>
-   <ul> 
-      <li><a href='https://fictional-waddle-6j9g5wqr45p3grw-4567.app.github.dev/dice/2/6'> 2 6-sided</a></li>
-      <li><a href='https://fictional-waddle-6j9g5wqr45p3grw-4567.app.github.dev/dice/2/10'>2 10-sided</a></li>
-      <li><a href='https://fictional-waddle-6j9g5wqr45p3grw-4567.app.github.dev/dice/1/20'>20-sided</a></li>
-      <li><a href='https://fictional-waddle-6j9g5wqr45p3grw-4567.app.github.dev/dice/5/4'>5 4-sided</a></li>
-   </ul> 
-  </h3>
-  "
+  # erb argument must be symbol of views file name
+  erb(:elephant)
 end
 
 get("/dice/2/6") do
