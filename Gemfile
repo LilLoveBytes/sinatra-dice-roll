@@ -8,3 +8,5 @@ gem "sinatra-contrib"       # hot-reload
 
 gem "better_errors"         # better error info
 gem "binding_of_caller"     # better error info
+
+gem "htmlbeautifier"        # formatter
